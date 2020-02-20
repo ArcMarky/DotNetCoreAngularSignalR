@@ -1,0 +1,23 @@
+
+<h3>Priority Number</h3>
+<br />
+<br />
+<br />
+<br />
+<div class="row">
+  <div class="col-sm-4">
+    <h1 style="text-align:right;font-size: 110px;">{{nowServingNumber}}</h1>
+  </div>
+</div>
+<textarea hidden id="text" cols="45" rows="3">Now serving number {{+nowServingNumber + 1}}.</textarea>
+<input id="activateVoice" onclick="responsiveVoice.speak($('#text').val(),'Filipino Female');"
+       type="button"
+       value="Play" hidden />
+<script>   
+        var voicelist = responsiveVoice.getVoices();
+        var vselect = $("#voiceselection");
+        $.each(voicelist, function() {
+                vselect.append($("<option />").val(this.name).text(this.name));
+        });
+</script>
+

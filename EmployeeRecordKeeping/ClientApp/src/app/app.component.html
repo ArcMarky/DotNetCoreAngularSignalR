@@ -1,0 +1,25 @@
+<div class="layout-topbar">
+  <div class="fluid-container">
+    <div class="row">
+      <div class="col-md-10">
+        <div style="color:white" class="col-md-3">Angular 7 SignalR Notifications</div>
+      </div>
+    </div>
+  </div>
+</div>
+<p-toast [style]="{marginTop: '50px'}"></p-toast>
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)"
+             size="large"
+             color="#a3dcf4"
+             type="square-jelly-box"></ngx-spinner>
+<div class='container-fluid'>
+  <div class='row'>
+    <div class='col-sm-3'>
+      <app-nav-menu></app-nav-menu>
+    </div>
+    <div class='col-sm-9 body-content'>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+

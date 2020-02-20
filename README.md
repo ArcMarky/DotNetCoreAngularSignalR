@@ -1,0 +1,2 @@
+# DotNetCoreAngularSignalR
+Arcanys demo project
